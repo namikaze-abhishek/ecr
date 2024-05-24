@@ -31,7 +31,7 @@ resource "aws_ecs_task_definition" "my_task_definition" {
   [
     {
       "name": "my-container",
-      "image": "${aws_account_id}.dkr.ecr.${aws_region}.amazonaws.com/my-app:${var.image_tag != "" ? var.image_tag : "latest"},
+      "image": "654654608593.dkr.ecr.eu-north-1.amazonaws.com/myapp:latest,
       "memory": 512,
       "cpu": 256,
       "essential": true,
