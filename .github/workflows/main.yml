@@ -43,6 +43,6 @@ jobs:
 
     - name: Deploy with Terraform
       run: |
-        cd infrastructure
+        cd ecr
         terraform init
         terraform apply -auto-approve -var="image_tag=latest" -var="environment=production"
