@@ -36,7 +36,7 @@ jobs:
          REPOSITORY: my-app
          IMAGE_TAG: latest
       run: |
-          docker build -t my-app .
+          docker build -t myapp .
           docker tag myapp:latest 654654608593.dkr.ecr.eu-north-1.amazonaws.com/myapp:latest
           docker push 654654608593.dkr.ecr.eu-north-1.amazonaws.com/myapp:latest
     
