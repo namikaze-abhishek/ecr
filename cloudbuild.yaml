@@ -4,3 +4,5 @@ steps:
 # Push the container image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'asia-southeast1-docker.pkg.dev/learning-cloud-436618/node-ecs/backend:latest']
+logging: CLOUD_LOGGING_ONLY
+serviceAccount: 'new-serviceaccount@learning-cloud-436618.iam.gserviceaccount.com'
