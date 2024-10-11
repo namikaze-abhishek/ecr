@@ -1,9 +1,9 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'asia-southeast1-docker.pkg.dev/learning-cloud-436618/node-ecs/backend:latest', '.']
+  args: ['build', '-t', 'asia-southeast1-docker.pkg.dev/learning-cloud-436618/node-acs/backend:latest', '.']
 # Push the container image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'asia-southeast1-docker.pkg.dev/learning-cloud-436618/node-ecs/backend:latest']
+  args: ['push', 'asia-southeast1-docker.pkg.dev/learning-cloud-436618/node-acs/backend:latest']
 options:
   logging: CLOUD_LOGGING_ONLY
 
